@@ -78,7 +78,7 @@ The one and only thing added by this addon to your app's namespace is the
 `fui-module` modifier. This modifier takes only one positional param to specify
 what module you want to use and as many named params as the FUI module has settings.
 
-If you want to know what settings are available for a given module, visit the module's settings page at https://fomantic-ui.com/modules/<moduleName>.html#/settings), or in a console in the brower, you can type `$.fn.moduleName.settings`.
+If you want to know what settings are available for a given module, visit the module's settings page at https://fomantic-ui.com/modules/moduleName.html#/settings), or in a console in the brower, you can type `$.fn.moduleName.settings`.
 
 ### Example usage for the Dropdown module
 
