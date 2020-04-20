@@ -1,5 +1,60 @@
-<button class="ui button" type="button">
-  ui button
-</button>
+<div class="ui container">
+  <h2 id="title">
+    Welcome to Ember
+  </h2>
 
-{{outlet}}
+  {{outlet}}
+
+  <div {{fui-module "slider" start=this.sliderValue max=100 onMove=(fn (mut this.sliderValue)) onChange=(fn (mut this.sliderValue))}} class="ui slider">
+  </div>
+
+  <button class="ui button" type="button" {{on 'click' (fn (mut this.sliderValue) 10)}}>set slider value to 10</button>
+  <button class="ui button" type="button" {{on 'click' (fn (mut this.sliderValue) 20)}}>set slider value to 20</button>
+  sliderValue: {{this.sliderValue}}
+
+  <br><br>
+
+  <button {{fui-module "popup" inline=true}} type="button" class="ui button">
+    +
+  </button>
+  <div class="ui popup">
+    Add users to your feed
+  </div>
+
+  <br><br>
+
+  <button class="ui button" type="button" {{on 'click' (fn (mut this.showDropdown) true)}}>show dropdown</button>
+  <button class="ui button" type="button" {{on 'click' (fn (mut this.showDropdown) false)}}>hide dropdown</button>
+
+  {{#if this.showDropdown}}
+    <div class="ui selection dropdown" {{fui-module "dropdown" onChange=(fn (mut this.gender)) debug=true verbose=true}}>
+      <input type="hidden" name="gender">
+      <i class="dropdown icon"></i>
+      <div data-test-text class="default text">Gender</div>
+      <div class="menu">
+        <div class="item" data-test-male data-value="1">Male</div>
+        <div class="item" data-test-female data-value="0">Female</div>
+      </div>
+    </div>
+  {{/if}}
+
+  <div data-test-gender>this.gender: {{this.gender}}</div>
+
+  <br><br>
+
+  <button class="ui button" type="button" {{on 'click' (fn (mut this.value) 0)}}>set this.value to 0 (Male)</button>
+  <button class="ui button" type="button" {{on 'click' (fn (mut this.value) 1)}}>set this.value to 1 (Female)</button>
+
+  <div class="ui selection dropdown" {{fui-module "dropdown" onChange=(fn (mut this.value)) debug=true verbose=true}}>
+    <input type="hidden" name="gender" value={{this.value}}>
+    <i class="dropdown icon"></i>
+    <div data-test-text class="default text">Gender</div>
+    <div class="menu">
+      <div class="item" data-test-male data-value="0">Male</div>
+      <div class="item" data-test-female data-value="1">Female</div>
+    </div>
+  </div>
+
+  <div data-test-gender>this.value: {{this.value}}</div>
+
+</div>

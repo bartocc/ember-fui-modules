@@ -1,36 +1,38 @@
-"use strict";
-const resolve = require("resolve");
-const debug = require("debug")("ember-fui-modules");
+'use strict';
+
+const name = require('./package').name;
+const debug = require('debug')(name);
 
 module.exports = {
-  name: require("./package").name,
+  name,
 
-  included(app) {
-    this._super.included.apply(this, app);
+  included(includer) {
+    this._super.included.apply(this, includer);
 
-    if (!app.options.lessOptions) app.options.lessOptions = {};
-    if (!app.options.lessOptions.paths) app.options.lessOptions.paths = [];
+    if (!includer.options.fuiModules) return;
 
-    const accordionModulePath = "/definitions/modules/accordion.js";
-    const res = resolve.sync(`fomantic-ui-less${accordionModulePath}`, {
-      basedir: __dirname,
+    this.fuiModulesOptions = includer.options.fuiModules;
+    this.fuiModulesOptions.only = this.fuiModulesOptions.only || [];
+
+    this.fuiModulesOptions.only.forEach(e => {
+      let importedFile = `node_modules/fomantic-ui-less/definitions/modules/${e}.js`;
+      debug("importing fomantic-ui module '%s' for '%s' from %o", e, includer.name, importedFile);
+      this.import(importedFile);
+
+      // modal.js requires dimmer.js
+      if (!this.fuiModulesOptions.only.includes('dimmer') && e === 'modal') {
+        importedFile = `node_modules/fomantic-ui-less/definitions/modules/dimmer.js`;
+        debug("importing fomantic-ui module '%s' for '%s' from %o", e, includer.name, importedFile);
+        this.import(importedFile);
+      }
+
+      // popup.js requires transition.js
+      if (!this.fuiModulesOptions.only.includes('transition') && e === 'popup') {
+        importedFile = `node_modules/fomantic-ui-less/definitions/modules/transition.js`;
+        debug("importing fomantic-ui module '%s' for '%s' from %o", e, includer.name, importedFile);
+        this.import(importedFile);
+      }
+
     });
-    const fuiLessPath = res.replace(accordionModulePath, "");
-    let appRoot;
-
-    appRoot = app.project.isEmberCLIAddon()
-      ? app.options.configPath.replace("/config/environment", "")
-      : app.project.root;
-
-    const addedPaths = [
-      fuiLessPath,
-      `${appRoot}/app/styles/fomantic`,
-      `${appRoot}/app/styles/fomantic/dummy-path-to-import/theme.config`,
-    ];
-
-    debug("Adding the following paths to lessOptions: %o", addedPaths);
-    app.options.lessOptions.paths = app.options.lessOptions.paths.concat(
-      addedPaths
-    );
-  },
+  }
 };
