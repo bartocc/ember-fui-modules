@@ -13,6 +13,3 @@ jobs:
 
     - name: test ember-fui-modules
       run: yarn workspace ember-fui-modules test
-
-    - name: test test-app
-      run: yarn workspace test-app test
