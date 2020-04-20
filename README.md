@@ -10,7 +10,6 @@ Use Fomantic UI modules in an Ember.js app.
 ## Table of contents
 
 - [Installation](#installation)
-- [Compatibility](#compatibility)
 - [Configuration](#configuration)
   - [Specify what modules your application needs](#specify-what-modules-your-application-needs)
   - [Optout of automatic CSS import](#optout-of-automatic-css-import)
@@ -19,6 +18,7 @@ Use Fomantic UI modules in an Ember.js app.
   - [Example usage for the Modal module](#example-usage-for-the-modal-module)
   - [Example usage for the Popup module](#example-usage-for-the-popup-module)
   - [Example usage for the Slider module](#example-usage-for-the-slider-module)
+- [Compatibility](#compatibility)
 - [Contributing](#contributing)
 - [License](#license)
 - [Credits](#credits)
@@ -28,16 +28,6 @@ Use Fomantic UI modules in an Ember.js app.
 ```
 ember install ember-fui-modules
 ```
-
-This will execute the following actions:
-
-1. Add `fomantic-ui-css` to your devDependencies
-
-## Compatibility
-
-* Ember.js v3.13 or above
-* Ember CLI v2.13 or above
-* Node.js v12 or above
 
 ## Configuration
 
@@ -158,6 +148,12 @@ TIP: Beware, the `ui popup` CSS classes must be placed on the element representi
 <div {{fui-module "slider" onMove=(fn (mut this.sliderValue))}} class="ui slider" ></div>
 <input type="number" value={{this.sliderValue}}>
 ```
+
+## Compatibility
+
+* Ember.js v3.13 or above
+* Ember CLI v2.13 or above
+* Node.js v10 or above
 
 ## Contributing
 
