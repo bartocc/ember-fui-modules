@@ -36,7 +36,7 @@
   "devDependencies": {
     "@ember/optional-features": "^1.1.0",
     "@glimmer/component": "^1.0.0",
-    "auto-changelog": "^1.16.2",
+    "auto-changelog": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "copyfiles": "^2.2.0",
