@@ -12,6 +12,8 @@ Use Fomantic UI modules in an Ember.js app.
 - [Installation](#installation)
 - [Compatibility](#compatibility)
 - [Usage](#usage)
+  - [Specify what modules your application needs](#specify-what-modules-your-application-needs)
+  - [Optout of automatic CSS import](#optout-of-automatic-css-import)
 - [Contributing](#contributing)
 - [License](#license)
 - [Credits](#credits)
@@ -34,6 +36,8 @@ This will execute the following actions:
 
 ## Usage
 
+### Specify what modules your application needs
+
 ⚠️ By default, this addon does not include any FUI module. This is to ensure that no unnecessary js files are added to your app's bundle. ⚠️
 
 If you want to use a FUI module in your app, add the following in `ember-cli-build.js`:
@@ -46,8 +50,22 @@ fuiModules: {
 
 This will automatically `import` the `accordion.js` and `modal.js` files in your app's bundle.
 
-Also note that some FUI modules depend on other modules. For example, the `modal` module depends on the `transition` module.
+Also note that some FUI modules depend on other modules. For example, the `modal` module depends on the `dimmer` module.
 `ember-fui-modules` will know this and automatically `import` the necessary module dependencies.
+
+### Optout of automatic CSS import
+
+For FUI modules to work, both `js` and `CSS` files must be imported. By default, this addon imports the CSS for the modules you required with `fuiModules.only`.
+
+If, for instance, you use
+[ember-fui-less](https://github.com/bartocc/ember-fui-less) to customize the FUI
+theme, or want to import FUI CSS by any other way in your app, you can optout of automatic CSS import by setting `fuiModules.importCSS` to false with:
+
+```js
+fuiModules: {
+  importCSS: false
+}
+```
 
 ## Contributing
 

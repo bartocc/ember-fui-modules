@@ -6,6 +6,20 @@ const debug = require("debug")(name);
 module.exports = {
   name,
 
+  importFuiModule(moduleName, importCss, includer) {
+    const modulesDir = "node_modules/fomantic-ui-css/components";
+    const importedModule = `${modulesDir}/${moduleName}.js`;
+
+    debug("importing %o for '%s'", importedModule, includer.name);
+    this.import(importedModule);
+
+    if (importCss) {
+      let importedCss = `${modulesDir}/${moduleName}.css`;
+      debug("importing %o for '%s'", importedCss, includer.name);
+      this.import(importedCss);
+    }
+  },
+
   included(includer) {
     this._super.included.apply(this, includer);
 
@@ -14,43 +28,39 @@ module.exports = {
     this.fuiModulesOptions = includer.options.fuiModules;
     this.fuiModulesOptions.only = this.fuiModulesOptions.only || [];
 
-    const modulesDir = "node_modules/fomantic-ui-css/components";
+    // importCss defaults to true
+    if (this.fuiModulesOptions.importCss === undefined)
+      this.fuiModulesOptions.importCss = true;
 
-    this.fuiModulesOptions.only.forEach((e) => {
-      let importedFile = `${modulesDir}/${e}.js`;
-      debug(
-        "importing fomantic-ui module '%s' for '%s' from %o",
-        e,
-        includer.name,
-        importedFile
+    this.fuiModulesOptions.only.forEach((moduleName) => {
+      this.importFuiModule(
+        moduleName,
+        this.fuiModulesOptions.importCss,
+        includer
       );
-      this.import(importedFile);
 
       // modal.js requires dimmer.js
-      if (!this.fuiModulesOptions.only.includes("dimmer") && e === "modal") {
-        importedFile = `${modulesDir}/dimmer.js`;
-        debug(
-          "importing fomantic-ui module '%s' for '%s' from %o",
-          e,
-          includer.name,
-          importedFile
+      if (
+        !this.fuiModulesOptions.only.includes("dimmer") &&
+        moduleName === "modal"
+      ) {
+        this.importFuiModule(
+          "dimmer",
+          this.fuiModulesOptions.importCss,
+          includer
         );
-        this.import(importedFile);
       }
 
       // popup.js requires transition.js
       if (
         !this.fuiModulesOptions.only.includes("transition") &&
-        e === "popup"
+        moduleName === "popup"
       ) {
-        importedFile = `${modulesDir}/transition.js`;
-        debug(
-          "importing fomantic-ui module '%s' for '%s' from %o",
-          e,
-          includer.name,
-          importedFile
+        this.importFuiModule(
+          "transition",
+          this.fuiModulesOptions.importCss,
+          includer
         );
-        this.import(importedFile);
       }
     });
   },
