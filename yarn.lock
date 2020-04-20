@@ -2800,21 +2800,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"auto-changelog@npm:^1.16.2":
-  version: 1.16.4
-  resolution: "auto-changelog@npm:1.16.4"
+"auto-changelog@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "auto-changelog@npm:2.0.0"
   dependencies:
     commander: ^5.0.0
-    core-js: ^3.6.4
     handlebars: ^4.7.3
     lodash.uniqby: ^4.7.0
     node-fetch: ^2.6.0
     parse-github-url: ^1.0.2
-    regenerator-runtime: ^0.13.5
     semver: ^6.3.0
   bin:
-    auto-changelog: ./lib/index.js
-  checksum: 2/0a0036e7637b23b794d9aa69065ed2c6fb81e21a7fe0eec9811b91eb6e261401b0c402281c16d38d468e33bfa3fa4bc8a23cccd5a88a8e9db535c8ddf8ed8b07
+    auto-changelog: src/index.js
+  checksum: 2/3a8d0c0b2f53000edf99c14c6580e751003bc032d7d0dba4b92b9f6bcb6d989d6f1c6cd81a6f978e3beaf0b0948fa0d52720299b08015cd4dbe3bb0ec2e47603
   languageName: node
   linkType: hard
 
@@ -5618,13 +5616,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.6.4":
-  version: 3.6.5
-  resolution: "core-js@npm:3.6.5"
-  checksum: 2/9283348dd5be2f1d07feaf90e2336b3f00a2316e3d3c6d4f789c9a67bdd4d7b08ce1c88dca4e591340130056c6b412b0b74fae039f8e259206f1073f542e4e85
-  languageName: node
-  linkType: hard
-
 "core-object@npm:^3.1.5":
   version: 3.1.5
   resolution: "core-object@npm:3.1.5"
@@ -6733,7 +6724,7 @@ __metadata:
     "@ember/jquery": ^1.1.0
     "@ember/optional-features": ^1.1.0
     "@glimmer/component": ^1.0.0
-    auto-changelog: ^1.16.2
+    auto-changelog: ^2.0.0
     babel-eslint: ^10.1.0
     broccoli-asset-rev: ^3.0.0
     copyfiles: ^2.2.0
@@ -12585,13 +12576,6 @@ __metadata:
   version: 0.13.4
   resolution: "regenerator-runtime@npm:0.13.4"
   checksum: 2/d6165e7ba67f28f813a28fc07aa0c771ae8df913a3277c0aa837957d72debc4f1df4f53a6e98636c1cc87c6ba643ce8c522eb36542bbc4234c645af9d992c7c2
-  languageName: node
-  linkType: hard
-
-"regenerator-runtime@npm:^0.13.5":
-  version: 0.13.5
-  resolution: "regenerator-runtime@npm:0.13.5"
-  checksum: 2/8d8ee0eca26e0491085033caf2b1b95379c4db21e38d79cde52bbd4014a3865eee26ec0f4f958682e8600f185f2f5dbcd8c6685b9b9261639767929c19b5bcd2
   languageName: node
   linkType: hard
 
