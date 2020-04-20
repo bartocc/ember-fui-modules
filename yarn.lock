@@ -1574,16 +1574,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ember/render-modifiers@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@ember/render-modifiers@npm:1.0.2"
-  dependencies:
-    ember-cli-babel: ^7.10.0
-    ember-modifier-manager-polyfill: ^1.1.0
-  checksum: 2/9fbfe0a9e357d3b3b1656c392fc2b3fed425a773fd9144b6879edc280554f5e676c05bf07057657c2c0c608277f7ccbc598a5e5be48070ae86a7b277b6fb580a
-  languageName: node
-  linkType: hard
-
 "@ember/test-helpers@npm:^1.7.1":
   version: 1.7.1
   resolution: "@ember/test-helpers@npm:1.7.1"
@@ -6275,40 +6265,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli-babel@npm:^7.10.0, ember-cli-babel@npm:^7.11.1, ember-cli-babel@npm:^7.18.0":
-  version: 7.19.0
-  resolution: "ember-cli-babel@npm:7.19.0"
-  dependencies:
-    "@babel/core": ^7.9.0
-    "@babel/helper-compilation-targets": ^7.8.7
-    "@babel/plugin-proposal-class-properties": ^7.8.3
-    "@babel/plugin-proposal-decorators": ^7.8.3
-    "@babel/plugin-transform-modules-amd": ^7.9.0
-    "@babel/plugin-transform-runtime": ^7.9.0
-    "@babel/plugin-transform-typescript": ^7.9.0
-    "@babel/polyfill": ^7.8.7
-    "@babel/preset-env": ^7.9.0
-    "@babel/runtime": ^7.9.0
-    amd-name-resolver: ^1.2.1
-    babel-plugin-debug-macros: ^0.3.0
-    babel-plugin-ember-data-packages-polyfill: ^0.1.2
-    babel-plugin-ember-modules-api-polyfill: ^2.12.0
-    babel-plugin-module-resolver: ^3.1.1
-    broccoli-babel-transpiler: ^7.4.0
-    broccoli-debug: ^0.6.4
-    broccoli-funnel: ^2.0.1
-    broccoli-source: ^1.1.0
-    clone: ^2.1.2
-    ember-cli-babel-plugin-helpers: ^1.1.0
-    ember-cli-version-checker: ^4.1.0
-    ensure-posix-path: ^1.0.2
-    fixturify-project: ^1.10.0
-    rimraf: ^3.0.1
-    semver: ^5.5.0
-  checksum: 2/1fcdc148dbf8b8cffe699a2484d51803756d957b223d3012bc4025c3114e58f575303d673d99b08abab8b3695a4697231ab8f144c0e44d0ee2a8d7ddfa626a86
-  languageName: node
-  linkType: hard
-
 "ember-cli-babel@npm:^7.11.0, ember-cli-babel@npm:^7.12.0, ember-cli-babel@npm:^7.13.2, ember-cli-babel@npm:^7.7.3":
   version: 7.18.0
   resolution: "ember-cli-babel@npm:7.18.0"
@@ -6340,6 +6296,40 @@ __metadata:
     rimraf: ^3.0.1
     semver: ^5.5.0
   checksum: 2/a8916bdd41a4fc48ba7d506f6d1f6c8dbd614a705b2d89179011fc7b7b28a925b5f9a80c54796c7b41dbe4dc0a91af6091f04f86d7f96efdfa65c015dbce79a3
+  languageName: node
+  linkType: hard
+
+"ember-cli-babel@npm:^7.11.1, ember-cli-babel@npm:^7.18.0":
+  version: 7.19.0
+  resolution: "ember-cli-babel@npm:7.19.0"
+  dependencies:
+    "@babel/core": ^7.9.0
+    "@babel/helper-compilation-targets": ^7.8.7
+    "@babel/plugin-proposal-class-properties": ^7.8.3
+    "@babel/plugin-proposal-decorators": ^7.8.3
+    "@babel/plugin-transform-modules-amd": ^7.9.0
+    "@babel/plugin-transform-runtime": ^7.9.0
+    "@babel/plugin-transform-typescript": ^7.9.0
+    "@babel/polyfill": ^7.8.7
+    "@babel/preset-env": ^7.9.0
+    "@babel/runtime": ^7.9.0
+    amd-name-resolver: ^1.2.1
+    babel-plugin-debug-macros: ^0.3.0
+    babel-plugin-ember-data-packages-polyfill: ^0.1.2
+    babel-plugin-ember-modules-api-polyfill: ^2.12.0
+    babel-plugin-module-resolver: ^3.1.1
+    broccoli-babel-transpiler: ^7.4.0
+    broccoli-debug: ^0.6.4
+    broccoli-funnel: ^2.0.1
+    broccoli-source: ^1.1.0
+    clone: ^2.1.2
+    ember-cli-babel-plugin-helpers: ^1.1.0
+    ember-cli-version-checker: ^4.1.0
+    ensure-posix-path: ^1.0.2
+    fixturify-project: ^1.10.0
+    rimraf: ^3.0.1
+    semver: ^5.5.0
+  checksum: 2/1fcdc148dbf8b8cffe699a2484d51803756d957b223d3012bc4025c3114e58f575303d673d99b08abab8b3695a4697231ab8f144c0e44d0ee2a8d7ddfa626a86
   languageName: node
   linkType: hard
 
@@ -6711,7 +6701,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-compatibility-helpers@npm:^1.1.2, ember-compatibility-helpers@npm:^1.2.0":
+"ember-compatibility-helpers@npm:^1.1.2":
   version: 1.2.0
   resolution: "ember-compatibility-helpers@npm:1.2.0"
   dependencies:
@@ -6742,7 +6732,6 @@ __metadata:
   dependencies:
     "@ember/jquery": ^1.1.0
     "@ember/optional-features": ^1.1.0
-    "@ember/render-modifiers": ^1.0.2
     "@glimmer/component": ^1.0.0
     auto-changelog: ^1.16.2
     babel-eslint: ^10.1.0
@@ -6796,17 +6785,6 @@ __metadata:
     ember-cli-babel: ^6.0.0-beta.4
     regenerator-runtime: ^0.9.5
   checksum: 2/a096a376f5e9bc65e2ea58b393a55585f22e08852a02a5faefc6cb5438d37d3ff216f43680d348ca0ff47af8da6ae60c41dc5604821f65bdac8d92c255cdf4a5
-  languageName: node
-  linkType: hard
-
-"ember-modifier-manager-polyfill@npm:^1.1.0":
-  version: 1.2.0
-  resolution: "ember-modifier-manager-polyfill@npm:1.2.0"
-  dependencies:
-    ember-cli-babel: ^7.10.0
-    ember-cli-version-checker: ^2.1.2
-    ember-compatibility-helpers: ^1.2.0
-  checksum: 2/05ad185afc3f1140ab74cd0eccacf0b592b382571c5105c2962d0d2089052051aa4fc1f1f1c204f698a375db73d03c71cedd0cbcc8fb9ffaa488e69069786ea9
   languageName: node
   linkType: hard
 
