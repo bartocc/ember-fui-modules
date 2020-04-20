@@ -4242,7 +4242,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"broccoli-merge-trees@npm:^3.0.0, broccoli-merge-trees@npm:^3.0.1, broccoli-merge-trees@npm:^3.0.2":
+"broccoli-merge-trees@npm:^3.0.1, broccoli-merge-trees@npm:^3.0.2":
   version: 3.0.2
   resolution: "broccoli-merge-trees@npm:3.0.2"
   dependencies:
@@ -4259,6 +4259,16 @@ __metadata:
     broccoli-plugin: ^3.1.0
     merge-trees: ^2.0.0
   checksum: 2/152044d1a259a1d7dee1cf2a94c9848288c2a60322d6cf5fc7bf6c2b93958ef8467cab7edf6920dc0be0687936a61928a919be6a330259e11ea2f3d360f9acb6
+  languageName: node
+  linkType: hard
+
+"broccoli-merge-trees@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "broccoli-merge-trees@npm:4.2.0"
+  dependencies:
+    broccoli-plugin: ^4.0.2
+    merge-trees: ^2.0.0
+  checksum: 2/bc9e68d4c9e4fd77cfcf4cd16729128d21407c76805eef580f8d86d74e013f4fbfe3170a135f6c7cede1ca5097bc2395e8a65013bfd57dce308cbd530151906a
   languageName: node
   linkType: hard
 
@@ -4327,7 +4337,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"broccoli-output-wrapper@npm:^3.1.1":
+"broccoli-output-wrapper@npm:^3.1.1, broccoli-output-wrapper@npm:^3.2.1":
   version: 3.2.1
   resolution: "broccoli-output-wrapper@npm:3.2.1"
   dependencies:
@@ -4444,6 +4454,21 @@ __metadata:
     rimraf: ^3.0.0
     symlink-or-copy: ^1.3.0
   checksum: 2/a33b9aef462677c95517566bac7c6bba1905fbdace84958ec29a883c119ca8ac486e56a620dbcd52626a3ad75bb32acb375912e7358d4f75b3438b298ccf739e
+  languageName: node
+  linkType: hard
+
+"broccoli-plugin@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "broccoli-plugin@npm:4.0.2"
+  dependencies:
+    broccoli-node-api: ^1.6.0
+    broccoli-output-wrapper: ^3.2.1
+    fs-merger: ^3.0.1
+    promise-map-series: ^0.2.1
+    quick-temp: ^0.1.3
+    rimraf: ^3.0.0
+    symlink-or-copy: ^1.3.0
+  checksum: 2/9270d4dcaaf40a26c1ed6e2ff80703dec506725ab91de95f899695dfa1abcc08d8aa3e869ab9ff1382925758dc82873902db3f0ebb6247edfc9207a4db67deb9
   languageName: node
   linkType: hard
 
@@ -6574,6 +6599,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ember-cli-version-checker@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "ember-cli-version-checker@npm:5.0.2"
+  dependencies:
+    resolve-package-path: ^2.0.0
+    semver: ^7.1.3
+    silent-error: ^1.1.1
+  checksum: 2/02b87d9d96930a0929ebc87cfc37f96bb11bd733e031d40012431a39ea26f9213c7f4a333fd4c367f04023b689b662ee4d9711b8b37d18c1e7faa4efccd282f1
+  languageName: node
+  linkType: hard
+
 "ember-cli@npm:~3.16.0":
   version: 3.16.0
   resolution: "ember-cli@npm:3.16.0"
@@ -6728,11 +6764,11 @@ __metadata:
     ember-load-initializers: ^2.1.1
     ember-maybe-import-regenerator: ^0.1.6
     ember-qunit: ^4.6.0
-    ember-resolver: ^7.0.0
+    ember-resolver: ^8.0.0
     ember-source: ~3.17.0
     ember-source-channel-url: ^2.0.1
     ember-try: ^1.4.0
-    eslint-plugin-ember: ^7.10.1
+    eslint-plugin-ember: ^8.4.0
     eslint-plugin-node: ^11.0.0
     fomantic-ui-css: ^2.8.4
     loader.js: ^4.7.0
@@ -6789,17 +6825,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-resolver@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "ember-resolver@npm:7.0.0"
+"ember-resolver@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "ember-resolver@npm:8.0.0"
   dependencies:
     babel-plugin-debug-macros: ^0.3.3
-    broccoli-funnel: ^2.0.2
-    broccoli-merge-trees: ^3.0.0
-    ember-cli-babel: ^7.13.2
-    ember-cli-version-checker: ^3.1.3
-    resolve: ^1.14.0
-  checksum: 2/7a4234c12b48f4ec8cd6771de683646b43ffc1592f95018298a7f7c47841d689cc4123d7b17f686ecf0de7eb14d891bb268ec97d59381d2eade9cc46b74c3136
+    broccoli-funnel: ^3.0.2
+    broccoli-merge-trees: ^4.2.0
+    ember-cli-babel: ^7.18.0
+    ember-cli-version-checker: ^5.0.2
+    resolve: ^1.15.1
+  checksum: 2/900947e8fd57976593b164ebc44b37f25cf619e03c16b802972b8d9583fbfe5e32f608b5fadd93d637d3ec80bde94af91c9a91af41e04bffb9be162236fe55d5
   languageName: node
   linkType: hard
 
@@ -7177,14 +7213,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-ember@npm:^7.10.1":
-  version: 7.10.1
-  resolution: "eslint-plugin-ember@npm:7.10.1"
+"eslint-plugin-ember@npm:^8.4.0":
+  version: 8.4.0
+  resolution: "eslint-plugin-ember@npm:8.4.0"
   dependencies:
     "@ember-data/rfc395-data": ^0.0.4
     ember-rfc176-data: ^0.3.12
     snake-case: ^3.0.3
-  checksum: 2/3bdbaeff8b73f959834a5feae29d04f0e5433a422a8066e2f9b246f6d196e85b6e51b94b9ae3348d22132da35c35b78180c2695890cb279512787dc9d4de58c1
+  checksum: 2/97660dcb420dbd8c1f7e138ffe6bc10c7e129150452ddc7739fb19cda91b09575a4cf225eec3dc3d2708462477bb2acf444f0dc0226939e4bdead6b5d5b92695
   languageName: node
   linkType: hard
 
@@ -12969,7 +13005,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.1.6, resolve@npm:^1.10.0, resolve@npm:^1.10.1, resolve@npm:^1.11.1, resolve@npm:^1.12.0, resolve@npm:^1.13.1, resolve@npm:^1.14.0, resolve@npm:^1.14.2, resolve@npm:^1.15.1, resolve@npm:^1.3.2, resolve@npm:^1.3.3, resolve@npm:^1.4.0, resolve@npm:^1.5.0, resolve@npm:^1.7.1, resolve@npm:^1.8.1":
+"resolve@npm:^1.1.6, resolve@npm:^1.10.0, resolve@npm:^1.10.1, resolve@npm:^1.11.1, resolve@npm:^1.12.0, resolve@npm:^1.13.1, resolve@npm:^1.14.2, resolve@npm:^1.15.1, resolve@npm:^1.3.2, resolve@npm:^1.3.3, resolve@npm:^1.4.0, resolve@npm:^1.5.0, resolve@npm:^1.7.1, resolve@npm:^1.8.1":
   version: 1.15.1
   resolution: "resolve@npm:1.15.1"
   dependencies:
