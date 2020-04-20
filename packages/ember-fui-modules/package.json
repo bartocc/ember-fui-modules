@@ -1,6 +1,6 @@
 {
   "name": "ember-fui-modules",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use Fomantic UI modules in an Ember.js app.",
   "keywords": [
     "ember-addon",
