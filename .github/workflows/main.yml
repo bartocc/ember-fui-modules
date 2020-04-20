@@ -1,0 +1,18 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: yarn
+      run: yarn
+
+    - name: test ember-fui-modules
+      run: yarn workspace ember-fui-modules test
+
+    - name: test test-app
+      run: yarn workspace test-app test
