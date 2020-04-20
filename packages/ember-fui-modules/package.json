@@ -75,8 +75,7 @@
   "release-it": {
     "hooks": {
       "before:init": [
-        "yarn workspace ember-fui-modules test",
-        "yarn workspace test-app test"
+        "yarn workspace ember-fui-modules test"
       ],
       "before:npm:release": [
         "copyfiles ../../README.md packages/ember-fui-modules"
