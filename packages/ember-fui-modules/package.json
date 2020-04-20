@@ -24,7 +24,6 @@
     "test": "ember test",
     "test:all": "ember try:each",
     "release": "release-it",
-    "foo": "rm README.md",
     "version": "auto-changelog -p && mv CHANGELOG.md ../.. && git add ../../CHANGELOG.md"
   },
   "dependencies": {
