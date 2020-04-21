@@ -2900,6 +2900,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"asap@npm:~2.0.3":
+  version: 2.0.6
+  resolution: "asap@npm:2.0.6"
+  checksum: 2/3d314f8c598b625a98347bacdba609d4c889c616ca5d8ea65acaae8050ab8b7aa6630df2cfe9856c20b260b432adf2ee7a65a1021f268ef70408c70f809e3a39
+  languageName: node
+  linkType: hard
+
 "asn1.js@npm:^4.0.0":
   version: 4.10.1
   resolution: "asn1.js@npm:4.10.1"
@@ -4222,7 +4229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"broccoli-caching-writer@npm:^2.2.0":
+"broccoli-caching-writer@npm:^2.2.0, broccoli-caching-writer@npm:^2.3.1":
   version: 2.3.1
   resolution: "broccoli-caching-writer@npm:2.3.1"
   dependencies:
@@ -4448,6 +4455,19 @@ __metadata:
     glob: ^5.0.10
     mkdirp: ^0.5.1
   checksum: 2/10016e748b8c1ac175676d4b2ba2b243d29aaacb55ad4e39cb526f1dcccd5512abd359d1bbb8cc16aafe6a28b7892cb3d8cf7ea272c3c12eb985f2aedfd32806
+  languageName: node
+  linkType: hard
+
+"broccoli-less-single@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "broccoli-less-single@npm:1.1.0"
+  dependencies:
+    broccoli-caching-writer: ^2.3.1
+    include-path-searcher: ^0.1.0
+    less: ^3.7.1
+    lodash.merge: ^4.6.2
+    mkdirp: ^0.5.0
+  checksum: 2/5325b63b0b46d698965b2488d55fd3c91754806e73fe05eed8691c25534dc928d551d6b3a1d6661522da37de39b160af61aedd1f931f0128ac4252cd993e1dc0
   languageName: node
   linkType: hard
 
@@ -5043,6 +5063,22 @@ __metadata:
   version: 1.1.1
   resolution: "buffer-from@npm:1.1.1"
   checksum: 2/540ceb79c4f5bfcadaabbc18324fa84c50dc52905084be7c03596a339cf5a88513bee6831ce9b36ddd046fab09257a7c80686e129d0559a0cfd141da196ad956
+  languageName: node
+  linkType: hard
+
+"buffer-indexof@npm:~0.0.0":
+  version: 0.0.2
+  resolution: "buffer-indexof@npm:0.0.2"
+  checksum: 2/32783065f321ca3885a2c2830002d4c137fcd78d16fbde7083aa9b2827d0d99895ec5886a7aef06019415ac755f7181ec2dc992e0292d83d1e49241125da9d15
+  languageName: node
+  linkType: hard
+
+"buffer-split@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "buffer-split@npm:1.0.0"
+  dependencies:
+    buffer-indexof: ~0.0.0
+  checksum: 2/e28aa9329ad55644d4749014a710306ef7f85be0f8f5f0c35c889ed5e237e907867748122e41f19acbe16808f304e40c4b9a22710fd880c4ad0c1e884320dfbf
   languageName: node
   linkType: hard
 
@@ -6676,7 +6712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli-babel@npm:^7.11.1, ember-cli-babel@npm:^7.17.2, ember-cli-babel@npm:^7.18.0":
+"ember-cli-babel@npm:^7.11.1, ember-cli-babel@npm:^7.13.0, ember-cli-babel@npm:^7.17.2, ember-cli-babel@npm:^7.18.0":
   version: 7.19.0
   resolution: "ember-cli-babel@npm:7.19.0"
   dependencies:
@@ -6757,7 +6793,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli-htmlbars@npm:^4.2.2, ember-cli-htmlbars@npm:^4.2.3":
+"ember-cli-htmlbars@npm:^4.2.0, ember-cli-htmlbars@npm:^4.2.2, ember-cli-htmlbars@npm:^4.2.3":
   version: 4.3.1
   resolution: "ember-cli-htmlbars@npm:4.3.1"
   dependencies:
@@ -6793,6 +6829,18 @@ __metadata:
   version: 1.0.0
   resolution: "ember-cli-is-package-missing@npm:1.0.0"
   checksum: 2/2068cd6026f8102fc4190188bb5817bdee08bf0db41e079b8af1ee12b11e0f8964053ca507fac04985a86f4f05d1860f4945cbd398875f2d1a834531033a8346
+  languageName: node
+  linkType: hard
+
+"ember-cli-less@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "ember-cli-less@npm:3.0.1"
+  dependencies:
+    broccoli-less-single: ^1.1.0
+    broccoli-merge-trees: ^1.0.0
+    ember-cli-htmlbars: ^4.2.3
+    ember-cli-version-checker: ^5.0.2
+  checksum: 2/905dee877f773147e45f95881284c61341b9b908dd1eff69160774b6dcb03e6516c3eec8d59176632aae9d0a4a4009b357913ebc39c3dc435b6b9f43d88857b4
   languageName: node
   linkType: hard
 
@@ -7193,6 +7241,20 @@ __metadata:
     node-fetch: ^2.6.0
     whatwg-fetch: ^3.0.0
   checksum: 2/f425e8b61910d00d85c01fcdc33189768b446741e3455ce54be1d48d5dc83381ea5177f2907444b90c09ace15b335d4d16193687fad940e2e9c1ba8f8642a6a0
+  languageName: node
+  linkType: hard
+
+"ember-fui-less@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "ember-fui-less@npm:0.2.0"
+  dependencies:
+    buffer-split: ^1.0.0
+    chalk: ^3.0.0
+    debug: ^4.1.1
+    ember-cli-babel: ^7.13.0
+    ember-cli-htmlbars: ^4.2.0
+    resolve: ^1.15.1
+  checksum: 2/a7b46addf0ef8bf263e1deb7ac093d954e92e19b77f3f8318d244a25e54604099aa91c9e024479bcf9c2b26ba2e705957910c0616dd5826bea8bc08c77dcd022
   languageName: node
   linkType: hard
 
@@ -7633,7 +7695,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"errno@npm:^0.1.3, errno@npm:~0.1.7":
+"errno@npm:^0.1.1, errno@npm:^0.1.3, errno@npm:~0.1.7":
   version: 0.1.7
   resolution: "errno@npm:0.1.7"
   dependencies:
@@ -9722,6 +9784,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"image-size@npm:~0.5.0":
+  version: 0.5.5
+  resolution: "image-size@npm:0.5.5"
+  bin:
+    image-size: bin/image-size.js
+  checksum: 2/32f6203aebed2e5f1eafbef194cf9a19d8dddd6fe0157d8e2667cfc1d89ee8f9281b8c71e0ec04ee0c0ba654417b172d41abb1da5ee8924631d7ab1d7f9e64f9
+  languageName: node
+  linkType: hard
+
 "import-cwd@npm:3.0.0":
   version: 3.0.0
   resolution: "import-cwd@npm:3.0.0"
@@ -9761,6 +9832,13 @@ __metadata:
   version: 0.1.4
   resolution: "imurmurhash@npm:0.1.4"
   checksum: 2/34d414d789286f6ef4d2b954c76c7df40dd7cabffef9b9959c8bd148677e98151f4fa5344aae2e3ad2b62308555ccbba3022e535a3e24288c9babb1308e35532
+  languageName: node
+  linkType: hard
+
+"include-path-searcher@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "include-path-searcher@npm:0.1.0"
+  checksum: 2/d8142d2a7c5035e927e8384039e38d5df8b473cbd040c141bd4293d1b797fbfa357d05cb2672274896e4a35a0e71868ad8b6e6bcd6bf5168eac145674df3ceba
   languageName: node
   linkType: hard
 
@@ -10757,6 +10835,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"less@npm:^3.7.1":
+  version: 3.11.1
+  resolution: "less@npm:3.11.1"
+  dependencies:
+    clone: ^2.1.2
+    errno: ^0.1.1
+    graceful-fs: ^4.1.2
+    image-size: ~0.5.0
+    mime: ^1.4.1
+    mkdirp: ^0.5.0
+    promise: ^7.1.1
+    request: ^2.83.0
+    source-map: ~0.6.0
+    tslib: ^1.10.0
+  dependenciesMeta:
+    errno:
+      optional: true
+    graceful-fs:
+      optional: true
+    image-size:
+      optional: true
+    mime:
+      optional: true
+    mkdirp:
+      optional: true
+    promise:
+      optional: true
+    request:
+      optional: true
+    source-map:
+      optional: true
+  bin:
+    lessc: ./bin/lessc
+  checksum: 2/066358663d28635a8ecfd03c8380c50c3275f49e181444e28096add3cc6565711500bc36d541b88784a72f7690313ec763857f6a027c3316134c68be631c3729
+  languageName: node
+  linkType: hard
+
 "leven@npm:^3.1.0":
   version: 3.1.0
   resolution: "leven@npm:3.1.0"
@@ -11494,7 +11609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime@npm:1.6.0":
+"mime@npm:1.6.0, mime@npm:^1.4.1":
   version: 1.6.0
   resolution: "mime@npm:1.6.0"
   bin:
@@ -12957,6 +13072,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"promise@npm:^7.1.1":
+  version: 7.3.1
+  resolution: "promise@npm:7.3.1"
+  dependencies:
+    asap: ~2.0.3
+  checksum: 2/23267a4b078fcb02c57b06ca1a1d5739109deb0932c0fd79615a2c5636dd0571ac6a161f19c4ea9683a4ab89791da13112678fa410b65334de490e97c33410ae
+  languageName: node
+  linkType: hard
+
 "protocols@npm:^1.1.0, protocols@npm:^1.4.0":
   version: 1.4.7
   resolution: "protocols@npm:1.4.7"
@@ -13588,7 +13712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"request@npm:^2.88.0":
+"request@npm:^2.83.0, request@npm:^2.88.0":
   version: 2.88.2
   resolution: "request@npm:2.88.2"
   dependencies:
@@ -14510,7 +14634,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.6.0, source-map@npm:^0.6.1, source-map@npm:~0.6.1":
+"source-map@npm:^0.6.0, source-map@npm:^0.6.1, source-map@npm:~0.6.0, source-map@npm:~0.6.1":
   version: 0.6.1
   resolution: "source-map@npm:0.6.1"
   checksum: 2/8647829a0611724114022be455ca1c8a2c8ae61df81c5b3667d9b398207226a1e21174fb7bbf0b4dbeb27ac358222afb5a14f1c74a62a62b8883b012e5eb1270
@@ -15038,12 +15162,14 @@ __metadata:
     ember-cli-eslint: ^5.1.0
     ember-cli-htmlbars: ^4.2.2
     ember-cli-inject-live-reload: ^2.0.2
+    ember-cli-less: ^3.0.1
     ember-cli-sri: ^2.1.1
     ember-cli-template-lint: ^1.0.0-beta.3
     ember-cli-uglify: ^3.0.0
     ember-data: ~3.16.0
     ember-export-application-global: ^2.0.1
     ember-fetch: ^7.0.0
+    ember-fui-less: ^0.2.0
     ember-fui-modules: "workspace:packages/ember-fui-modules"
     ember-load-initializers: ^2.1.1
     ember-maybe-import-regenerator: ^0.1.6
