@@ -12,7 +12,7 @@ Use Fomantic UI modules in an Ember.js app.
 - [Installation](#installation)
 - [Configuration](#configuration)
   - [Specify what modules your application needs](#specify-what-modules-your-application-needs)
-  - [Optout of automatic CSS import](#optout-of-automatic-css-import)
+  - [Optoutt of automatic CSS import](#optoutt-of-automatic-css-import)
 - [Usage](#usage)
   - [Example usage for the Dropdown module](#example-usage-for-the-dropdown-module)
   - [Example usage for the Modal module](#example-usage-for-the-modal-module)
@@ -28,6 +28,12 @@ Use Fomantic UI modules in an Ember.js app.
 ```
 ember install ember-fui-modules
 ```
+
+If your app already depends on one of the Fomantic UI packages ([fomantic-ui](https://www.npmjs.com/package/fomantic-ui), [fomantic-ui-css](https://www.npmjs.com/package/fomantic-ui-css) or [fomantic-ui-less](https://www.npmjs.com/package/fomantic-ui-less)), `ember-fui-modules` will use this package to import the FUI module files (and CSS if you did not [Optout of automatic CSS import](#optout-of-automatic-css-import)).
+
+If, on the other hand, your app does not already depend on a FUI package, `fomantic-ui-css` will also be added to your app.
+
+This way, `ember-fui-modules` does not refenrece FUI as a `dependency` and you are free to use the package and version you wish. If tomorrow, a new FUI module is released, you won't need a new `ember-fui-modules` release. Just upgrade the `fomantic-ui*` package you use.
 
 ## Configuration
 
@@ -48,7 +54,7 @@ This will automatically `import` the `accordion.js` and `modal.js` files in your
 Also note that some FUI modules depend on other modules. For example, the `modal` module depends on the `dimmer` module.
 `ember-fui-modules` will know this and automatically `import` the necessary module dependencies.
 
-### Optout of automatic CSS import
+### Optoutt of automatic CSS import
 
 For FUI modules to work, both `js` and `CSS` files must be imported. By default, this addon imports the CSS for the modules you required with `fuiModules.only`.
 
