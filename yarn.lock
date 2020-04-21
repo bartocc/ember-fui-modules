@@ -6676,7 +6676,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli-babel@npm:^7.11.1, ember-cli-babel@npm:^7.17.2, ember-cli-babel@npm:^7.18.0, ember-cli-babel@npm:^7.4.1":
+"ember-cli-babel@npm:^7.11.1, ember-cli-babel@npm:^7.17.2, ember-cli-babel@npm:^7.18.0":
   version: 7.19.0
   resolution: "ember-cli-babel@npm:7.19.0"
   dependencies:
@@ -6754,18 +6754,6 @@ __metadata:
   peerDependencies:
     ember-cli-babel: ^6.7.1 || ^7.0.0
   checksum: 2/fac971a46a42604252f1be1d954684b885a19cad0865289182b9e185270579d2d02db430fd984501bf5eda90a7473fc207614c8caf766b89c7a9adf67283b202
-  languageName: node
-  linkType: hard
-
-"ember-cli-htmlbars@npm:^3.0.1":
-  version: 3.1.0
-  resolution: "ember-cli-htmlbars@npm:3.1.0"
-  dependencies:
-    broccoli-persistent-filter: ^2.3.1
-    hash-for-dep: ^1.5.1
-    json-stable-stringify: ^1.0.1
-    strip-bom: ^3.0.0
-  checksum: 2/f1c96bde7b82c4f62c542978f613b21cc2d2f8a82819bc25da069d7e6986663e0b93e10baedc76ccfd093fa8714eac379c2da7899f8bf016d1293ce226173943
   languageName: node
   linkType: hard
 
@@ -7240,7 +7228,7 @@ __metadata:
     ember-source-channel-url: ^2.0.1
     ember-try: ^1.4.0
     eslint-plugin-ember: ^8.4.0
-    eslint-plugin-node: ^11.0.0
+    eslint-plugin-node: ^11.1.0
     fomantic-ui-css: ^2.8.4
     loader.js: ^4.7.0
     qunit-dom: ^1.1.0
@@ -7523,18 +7511,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-welcome-page@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "ember-welcome-page@npm:4.0.0"
-  dependencies:
-    broccoli-funnel: ^2.0.2
-    ember-cli-babel: ^7.4.1
-    ember-cli-htmlbars: ^3.0.1
-    ember-compatibility-helpers: ^1.1.2
-  checksum: 2/b132f9e5195a0b26dcfdbe40933b21a00d623e3f6385e7c941034c2f620e73e1da73be451272196b317a74a944aa440f87f2796eb18fc3bec6225c0bee475a74
-  languageName: node
-  linkType: hard
-
 "emit-function@npm:0.0.2":
   version: 0.0.2
   resolution: "emit-function@npm:0.0.2"
@@ -7803,6 +7779,22 @@ __metadata:
   peerDependencies:
     eslint: ">=5.16.0"
   checksum: 2/fabfc5896b84d047ac3133bbe595a1b6506e47a951a565c9d75d0ea72a1ec20950f2f9d01a503bb567731c3b32e7b3f4c68ee951449bf8cfdb74fffca89d8496
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-node@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "eslint-plugin-node@npm:11.1.0"
+  dependencies:
+    eslint-plugin-es: ^3.0.0
+    eslint-utils: ^2.0.0
+    ignore: ^5.1.1
+    minimatch: ^3.0.4
+    resolve: ^1.10.1
+    semver: ^6.1.0
+  peerDependencies:
+    eslint: ">=5.16.0"
+  checksum: 2/634e03613a4aa0ffd5ccf0807a375840a915797781a4e5d44fb1c4d331cd2a5e6b3da41924a0d6a2123c1a51626db032a038210153fbba6a0012e0b7c7f26499
   languageName: node
   linkType: hard
 
@@ -8589,6 +8581,15 @@ __metadata:
   dependencies:
     jquery: ^3.4.0
   checksum: 2/7e75ad1b3da007296812cdf519cd845d59d4caaa912cdedf431c4b782287819333ec2645f41ac57011cd108a01e8ad7a857d4de7bc4ec0df3584b35efee450fc
+  languageName: node
+  linkType: hard
+
+"fomantic-ui-less@npm:^2.8.4":
+  version: 2.8.4
+  resolution: "fomantic-ui-less@npm:2.8.4"
+  dependencies:
+    jquery: ^3.4.0
+  checksum: 2/cc7a26a0fe251ea9ca6f35ad9c1d925226ecb6d6ea31ed1aae2b0c51cb901ceae877ef7e90edf931ffd06019c214bba5f7e818bd51d47ef7330ba95364b0e4e8
   languageName: node
   linkType: hard
 
@@ -15049,9 +15050,9 @@ __metadata:
     ember-qunit: ^4.6.0
     ember-resolver: ^7.0.0
     ember-source: ~3.16.0
-    ember-welcome-page: ^4.0.0
     eslint-plugin-ember: ^7.7.2
     eslint-plugin-node: ^11.0.0
+    fomantic-ui-less: ^2.8.4
     loader.js: ^4.7.0
     qunit-dom: ^1.0.0
   languageName: unknown

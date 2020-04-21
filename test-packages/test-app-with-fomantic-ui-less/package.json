@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build --environment=production",
+    "build": "ember build",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
@@ -45,6 +45,7 @@
     "ember-source": "~3.16.0",
     "eslint-plugin-ember": "^7.7.2",
     "eslint-plugin-node": "^11.0.0",
+    "fomantic-ui-less": "^2.8.4",
     "loader.js": "^4.7.0",
     "qunit-dom": "^1.0.0"
   },
