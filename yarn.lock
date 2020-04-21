@@ -15020,9 +15020,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"test-app@workspace:test-packages/test-app":
+"test-app-with-fomantic-ui-less@workspace:test-packages/test-app-with-fomantic-ui-less":
   version: 0.0.0-use.local
-  resolution: "test-app@workspace:test-packages/test-app"
+  resolution: "test-app-with-fomantic-ui-less@workspace:test-packages/test-app-with-fomantic-ui-less"
   dependencies:
     "@ember/optional-features": ^1.3.0
     "@glimmer/component": ^1.0.0

@@ -15,16 +15,16 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "[test-app] ember test",
-      "cwd": "${workspaceFolder}/test-packages/test-app",
+      "name": "[test-app-with-fomantic-ui-less] ember test",
+      "cwd": "${workspaceFolder}/test-packages/test-app-with-fomantic-ui-less",
       "program": "${workspaceFolder}/node_modules/ember-cli/bin/ember",
       "args": ["test"],
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "[test-app] ember generate ember-fui-modules",
-      "cwd": "${workspaceFolder}/test-packages/test-app",
+      "name": "[test-app-with-fomantic-ui-less] ember generate ember-fui-modules",
+      "cwd": "${workspaceFolder}/test-packages/test-app-with-fomantic-ui-less",
       "program": "${workspaceFolder}/node_modules/ember-cli/bin/ember",
       "args": ["generate", "ember-fui-modules"],
     }
