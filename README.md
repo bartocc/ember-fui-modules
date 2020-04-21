@@ -11,8 +11,8 @@ Use Fomantic UI modules in an Ember.js app.
 
 - [Installation](#installation)
 - [Configuration](#configuration)
-  - [Specify what modules your application needs](#specify-what-modules-your-application-needs)
-  - [Opt-out of automatic CSS import](#opt-out-of-automatic-css-import)
+  - [fuiModules.only: Specify what modules your application needs](#fuimodulesonly-specify-what-modules-your-application-needs)
+  - [fuiModules.importCss: Opt-out of automatic CSS import](#fuimodulesimportcss-opt-out-of-automatic-css-import)
 - [Usage](#usage)
   - [Example usage for the Dropdown module](#example-usage-for-the-dropdown-module)
   - [Example usage for the Modal module](#example-usage-for-the-modal-module)
@@ -29,7 +29,7 @@ Use Fomantic UI modules in an Ember.js app.
 ember install ember-fui-modules
 ```
 
-If your app already depends on one of the Fomantic UI packages ([fomantic-ui](https://www.npmjs.com/package/fomantic-ui), [fomantic-ui-css](https://www.npmjs.com/package/fomantic-ui-css) or [fomantic-ui-less](https://www.npmjs.com/package/fomantic-ui-less)), `ember-fui-modules` will use this package to import the FUI module files (and CSS if you did not [Opt-out of automatic CSS import](#opt-out-of-automatic-css-import)).
+If your app already depends on one of the Fomantic UI packages ([fomantic-ui](https://www.npmjs.com/package/fomantic-ui), [fomantic-ui-css](https://www.npmjs.com/package/fomantic-ui-css) or [fomantic-ui-less](https://www.npmjs.com/package/fomantic-ui-less)), `ember-fui-modules` will use this package to import the FUI module files (and CSS if you did not [Opt-out of automatic CSS import](#fuimodulesimportcss-opt-out-of-automatic-css-import)).
 
 If, on the other hand, your app does not already depend on a FUI package, `fomantic-ui-css` will also be added to your app.
 
@@ -37,36 +37,42 @@ This way, `ember-fui-modules` does not refenrece FUI as a `dependency` and you a
 
 ## Configuration
 
-### Specify what modules your application needs
+If you want to use a FUI module in your app, edit `ember-cli-build.js` to add the options under `fuiModules`.
+
+### fuiModules.only: Specify what modules your application needs
 
 ⚠️ By default, this addon does not include any FUI module. This is to ensure that no unnecessary js files are added to your app's bundle. ⚠️
 
-If you want to use a FUI module in your app, add the following in `ember-cli-build.js`:
-
 ```js
-fuiModules: {
-  only: ["accordion", "modal"]
-}
+new EmberApp(defaults, {
+  // ...
+  fuiModules: {
+    only: ["accordion", "modal"]
+  }
+});
 ```
 
-This will automatically `import` the `accordion.js` and `modal.js` files in your app's bundle.
+This will automatically `import` the `accordion.js`, `modal.js` (and `dimmer.js`, see note below) files in your app's bundle.
 
-Also note that some FUI modules depend on other modules. For example, the `modal` module depends on the `dimmer` module.
-`ember-fui-modules` will know this and automatically `import` the necessary module dependencies.
+Note: Some FUI modules depend on other modules. For example, the `modal` module depends on the `dimmer` module. `ember-fui-modules` will know this and automatically `import` the necessary module dependencies.
 
-### Opt-out of automatic CSS import
+### fuiModules.importCss: Opt-out of automatic CSS import
 
 For FUI modules to work, both `js` and `CSS` files must be imported. By default, this addon imports the CSS for the modules you required with `fuiModules.only`.
 
-If, for instance, you use
-[ember-fui-less](https://github.com/bartocc/ember-fui-less) to customize the FUI
-theme, or want to import FUI CSS by any other way in your app, you can opt-out of automatic CSS import by setting `fuiModules.importCSS` to false with:
+If you want to import FUI CSS manually, you can opt-out of automatic CSS import by setting `fuiModules.importCSS` to false with:
 
 ```js
-fuiModules: {
-  importCSS: false
-}
+new EmberApp(defaults, {
+  // ...
+  fuiModules: {
+    only: ["accordion", "modal"],
+    importCSS: false
+  }
+});
 ```
+
+Additionnaly, if you use [fomantic-ui-less](https://www.npmjs.com/package/fomantic-ui-less) in your application, the `importCss` option will have no effect.
 
 ## Usage
 
