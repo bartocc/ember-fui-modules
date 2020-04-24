@@ -1,0 +1,13 @@
+diff --git a/package.json b/package.json
+index 56138ae..564aae5 100644
+--- a/package.json
++++ b/package.json
+@@ -24,8 +24,6 @@
+     "url": "https://github.com/fomantic/Fomantic-UI.git"
+   },
+   "scripts": {
+-    "install": "gulp install",
+-    "build": "gulp build",
+     "changelog": "auto-changelog -p"
+   },
+   "dependencies": {
