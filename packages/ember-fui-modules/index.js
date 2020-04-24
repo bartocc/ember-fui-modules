@@ -20,15 +20,23 @@ module.exports = {
     throw "It looks like you application does not depend on any FUI package providing the modules files. Make sure you depend on either fomantic-ui, fomantic-ui-css or fomantic-ui-less if you want to use ember-fui-modules";
   },
 
-  // The fomantic-ui and fomantic-ui-css packages distribute the module files under the directory `components` while fomantic-ui-less uses `definitions/modules`
+  // the fomantic-ui      package distributes the module files under the directory `dist/components`
+  // the fomantic-ui-css  package distributes the module files under the directory `components`
+  // the fomantic-ui-less package distributes the module files under the directory `definitions/modules`
   fomanticUIModulesDir(project) {
     const usedFomanticUIPackage = this.usedFomanticUIPackage(project);
 
     if (usedFomanticUIPackage === "fomantic-ui-less")
       return "node_modules/fomantic-ui-less/definitions/modules";
 
-    if (["fomantic-ui-css", "fomantic-ui"].includes(usedFomanticUIPackage))
-      return `node_modules/${usedFomanticUIPackage}/components`;
+    if (usedFomanticUIPackage === "fomantic-ui")
+      return `node_modules/fomantic-ui/dist/components`;
+
+    if (usedFomanticUIPackage === "fomantic-ui-css")
+      return `node_modules/fomantic-ui-css/components`;
+
+    // if (["fomantic-ui-css", "fomantic-ui"].includes(usedFomanticUIPackage))
+    //   return `node_modules/${usedFomanticUIPackage}/components`;
 
     throw "It looks like you application does not depend on any FUI package providing the modules files. Make sure you depend on either fomantic-ui, fomantic-ui-css or fomantic-ui-less if you want to use ember-fui-modules";
   },

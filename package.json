@@ -6,6 +6,9 @@
       "test-packages/*"
     ]
   },
+  "scripts": {
+    "test:all": "yarn workspaces foreach -pv run test --test-port=0|grep fail"
+  },
   "engines": {
     "node": "12.*"
   }

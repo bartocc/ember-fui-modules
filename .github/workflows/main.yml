@@ -11,8 +11,5 @@ jobs:
     - name: yarn
       run: yarn
 
-    - name: test ember-fui-modules
-      run: yarn workspace ember-fui-modules test
-
-    - name: test test-app-with-fomantic-ui-less
-      run: yarn workspace test-app-with-fomantic-ui-less test
+    - name: test all packages
+      run: yarn workspaces foreach -pv run test --test-port=0

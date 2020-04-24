@@ -1,0 +1,5 @@
+<div
+  class="ui slider"
+  {{fui-module "slider" onMove=(fn (mut this.sliderValue))}}
+></div>
+<input type="number" value={{this.sliderValue}} />
