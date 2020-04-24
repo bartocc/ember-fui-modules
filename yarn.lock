@@ -1443,7 +1443,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.9.0":
+"@babel/runtime@npm:^7.9.0, @babel/runtime@npm:^7.9.2":
   version: 7.9.2
   resolution: "@babel/runtime@npm:7.9.2"
   dependencies:
@@ -1870,10 +1870,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iarna/toml@npm:2.2.3":
-  version: 2.2.3
-  resolution: "@iarna/toml@npm:2.2.3"
-  checksum: 2/567ef2e0cd7040802fadb00b879962683ee3dc4107b6507697e0d8cc50dad0fe542463a2bf0038b462de2f7d77898a03bcfbba78919cf2e7ae58dcbb24214c4f
+"@iarna/toml@npm:2.2.4":
+  version: 2.2.4
+  resolution: "@iarna/toml@npm:2.2.4"
+  checksum: 2/786b2ce629833ee33ea9786c47643a7218132b36471318c1df4ef8ac22d999037e3a27dc73c187fdccacbbe7e6db8a8c7c9ee00b04f1dcca72e9b3caced8ed97
   languageName: node
   linkType: hard
 
@@ -1982,13 +1982,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/plugin-rest-endpoint-methods@npm:3.5.2":
-  version: 3.5.2
-  resolution: "@octokit/plugin-rest-endpoint-methods@npm:3.5.2"
+"@octokit/plugin-rest-endpoint-methods@npm:3.7.1":
+  version: 3.7.1
+  resolution: "@octokit/plugin-rest-endpoint-methods@npm:3.7.1"
   dependencies:
-    "@octokit/types": ^2.0.1
+    "@octokit/types": ^2.11.1
     deprecation: ^2.3.1
-  checksum: 2/b5f0444a6c74e9c463ed5ef7e81c5daab8cd3e51dc59bfe03a20ae1a0c215646898e9aa283a79824882b48422dd0b9e9a11fc1c76d0c011f9cd17b8148a43b73
+  checksum: 2/ae69e06af483ea26e48491959fc943fee886050494bdb0437db46b2880c57bee2d5dc3439acbf7e6b6627e4eaa8f8927b8ac495b8fd6217613e604eca19bc526
   languageName: node
   linkType: hard
 
@@ -2019,19 +2019,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/rest@npm:17.3.0":
-  version: 17.3.0
-  resolution: "@octokit/rest@npm:17.3.0"
+"@octokit/rest@npm:17.5.1":
+  version: 17.5.1
+  resolution: "@octokit/rest@npm:17.5.1"
   dependencies:
     "@octokit/core": ^2.4.3
     "@octokit/plugin-paginate-rest": ^2.1.0
     "@octokit/plugin-request-log": ^1.0.0
-    "@octokit/plugin-rest-endpoint-methods": 3.5.2
-  checksum: 2/4fc938edab3b89babb72d387e56567a1b4d906e25076a4a93d2f69e68f305a52ffe779c12e064c0d889717497a2c634cfeede277030da2c3e0e59b5e982fe392
+    "@octokit/plugin-rest-endpoint-methods": 3.7.1
+  checksum: 2/eaedf9b30b85f7f2eb0b551fb30b5e4542900e8b6604017662a973c560faab7a6ccd60bbc2b88a9912fd6206031c93abe4f44149e5227b8dcab0b743ff017b25
   languageName: node
   linkType: hard
 
-"@octokit/types@npm:^2.0.0, @octokit/types@npm:^2.0.1, @octokit/types@npm:^2.11.1, @octokit/types@npm:^2.9.0":
+"@octokit/types@npm:^2.0.0, @octokit/types@npm:^2.11.1, @octokit/types@npm:^2.9.0":
   version: 2.11.1
   resolution: "@octokit/types@npm:2.11.1"
   dependencies:
@@ -7294,7 +7294,7 @@ __metadata:
     fomantic-ui-css: ^2.8.4
     loader.js: ^4.7.0
     qunit-dom: ^1.1.0
-    release-it: ^13.1.1
+    release-it: ^13.5.5
   languageName: unknown
   linkType: soft
 
@@ -12381,9 +12381,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ora@npm:4.0.3, ora@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "ora@npm:4.0.3"
+"ora@npm:4.0.4":
+  version: 4.0.4
+  resolution: "ora@npm:4.0.4"
   dependencies:
     chalk: ^3.0.0
     cli-cursor: ^3.1.0
@@ -12393,7 +12393,7 @@ __metadata:
     mute-stream: 0.0.8
     strip-ansi: ^6.0.0
     wcwidth: ^1.0.1
-  checksum: 2/cd84ed2c776b595af9abdef274e17d74ada10bfee88ba919219902a547a0dc853ba24f46f4ec30e589cbb92bae574e406c4169d6f197cf15c279e12a403763ff
+  checksum: 2/120595347066b1749b099015cbee3bda201904b5eff41f72ada2d06a0ebbd54bb2d765d3bfe8da09c61bc1894364e689cb085f65f71d95768acaf4f3ae274a91
   languageName: node
   linkType: hard
 
@@ -12408,6 +12408,22 @@ __metadata:
     strip-ansi: ^5.2.0
     wcwidth: ^1.0.1
   checksum: 2/19f5b615ce39e4b06160896623e6271372c308cd68ffbb122bd2cddcc116a0272bdfc799c54d1d005638a560d44662eda4f7c5b45bd30f2253784fac9f18c000
+  languageName: node
+  linkType: hard
+
+"ora@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "ora@npm:4.0.3"
+  dependencies:
+    chalk: ^3.0.0
+    cli-cursor: ^3.1.0
+    cli-spinners: ^2.2.0
+    is-interactive: ^1.0.0
+    log-symbols: ^3.0.0
+    mute-stream: 0.0.8
+    strip-ansi: ^6.0.0
+    wcwidth: ^1.0.1
+  checksum: 2/cd84ed2c776b595af9abdef274e17d74ada10bfee88ba919219902a547a0dc853ba24f46f4ec30e589cbb92bae574e406c4169d6f197cf15c279e12a403763ff
   languageName: node
   linkType: hard
 
@@ -13607,12 +13623,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"release-it@npm:^13.1.1":
-  version: 13.5.4
-  resolution: "release-it@npm:13.5.4"
+"release-it@npm:^13.5.5":
+  version: 13.5.5
+  resolution: "release-it@npm:13.5.5"
   dependencies:
-    "@iarna/toml": 2.2.3
-    "@octokit/rest": 17.3.0
+    "@iarna/toml": 2.2.4
+    "@octokit/rest": 17.5.1
     async-retry: 1.3.1
     chalk: 4.0.0
     cosmiconfig: 6.0.0
@@ -13630,7 +13646,7 @@ __metadata:
     is-ci: 2.0.0
     lodash: 4.17.15
     mime-types: 2.1.26
-    ora: 4.0.3
+    ora: 4.0.4
     os-name: 3.1.0
     parse-json: 5.0.0
     semver: 7.3.2
@@ -13640,11 +13656,11 @@ __metadata:
     url-join: 4.0.1
     uuid: 7.0.3
     window-size: 1.1.1
-    yaml: 1.8.3
+    yaml: 1.9.2
     yargs-parser: 18.1.3
   bin:
     release-it: bin/release-it.js
-  checksum: 2/939bf51c580c697bb8badbefa6452f0043db7b5392611aa459ef1fb0ddb81a57f6c28b5d56d174a708205ff99aef8955c87e62fdaa87ed99cc1ce73ee9adaddd
+  checksum: 2/e1f962932aabec524b8df2d4654868ec6dabece6a76fbc490914bfda9ae8d59701dc6c5b5dc609be8f99ca351c040eed048eb3631286ab1e7dee89b1df2cf892
   languageName: node
   linkType: hard
 
@@ -16406,7 +16422,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:1.8.3, yaml@npm:^1.7.2":
+"yaml@npm:1.9.2":
+  version: 1.9.2
+  resolution: "yaml@npm:1.9.2"
+  dependencies:
+    "@babel/runtime": ^7.9.2
+  checksum: 2/098baa974d33f13c3a93efba4e83c8992f533e78463010afc41a9c2ae574890fa670d91e8d18ffaf9af616c3a0683a4e93b69057bd143f53306570a117ebcb7f
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^1.7.2":
   version: 1.8.3
   resolution: "yaml@npm:1.8.3"
   dependencies:
