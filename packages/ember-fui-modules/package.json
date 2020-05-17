@@ -61,7 +61,7 @@
     "fomantic-ui-css": "^2.8.4",
     "loader.js": "^4.7.0",
     "qunit-dom": "^1.1.0",
-    "release-it": "^13.6.0"
+    "release-it": "^13.6.1"
   },
   "engines": {
     "node": ">= 9.9.*"
