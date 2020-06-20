@@ -7332,6 +7332,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ember-cli-babel@npm:^7.10.0, ember-cli-babel@npm:^7.11.1, ember-cli-babel@npm:^7.13.0, ember-cli-babel@npm:^7.17.2, ember-cli-babel@npm:^7.18.0":
+  version: 7.19.0
+  resolution: "ember-cli-babel@npm:7.19.0"
+  dependencies:
+    "@babel/core": ^7.9.0
+    "@babel/helper-compilation-targets": ^7.8.7
+    "@babel/plugin-proposal-class-properties": ^7.8.3
+    "@babel/plugin-proposal-decorators": ^7.8.3
+    "@babel/plugin-transform-modules-amd": ^7.9.0
+    "@babel/plugin-transform-runtime": ^7.9.0
+    "@babel/plugin-transform-typescript": ^7.9.0
+    "@babel/polyfill": ^7.8.7
+    "@babel/preset-env": ^7.9.0
+    "@babel/runtime": ^7.9.0
+    amd-name-resolver: ^1.2.1
+    babel-plugin-debug-macros: ^0.3.0
+    babel-plugin-ember-data-packages-polyfill: ^0.1.2
+    babel-plugin-ember-modules-api-polyfill: ^2.12.0
+    babel-plugin-module-resolver: ^3.1.1
+    broccoli-babel-transpiler: ^7.4.0
+    broccoli-debug: ^0.6.4
+    broccoli-funnel: ^2.0.1
+    broccoli-source: ^1.1.0
+    clone: ^2.1.2
+    ember-cli-babel-plugin-helpers: ^1.1.0
+    ember-cli-version-checker: ^4.1.0
+    ensure-posix-path: ^1.0.2
+    fixturify-project: ^1.10.0
+    rimraf: ^3.0.1
+    semver: ^5.5.0
+  checksum: 1fcdc148dbf8b8cffe699a2484d51803756d957b223d3012bc4025c3114e58f575303d673d99b08abab8b3695a4697231ab8f144c0e44d0ee2a8d7ddfa626a86
+  languageName: node
+  linkType: hard
+
 "ember-cli-babel@npm:^7.11.0, ember-cli-babel@npm:^7.12.0, ember-cli-babel@npm:^7.13.2, ember-cli-babel@npm:^7.7.3":
   version: 7.18.0
   resolution: "ember-cli-babel@npm:7.18.0"
@@ -7363,40 +7397,6 @@ __metadata:
     rimraf: ^3.0.1
     semver: ^5.5.0
   checksum: a8916bdd41a4fc48ba7d506f6d1f6c8dbd614a705b2d89179011fc7b7b28a925b5f9a80c54796c7b41dbe4dc0a91af6091f04f86d7f96efdfa65c015dbce79a3
-  languageName: node
-  linkType: hard
-
-"ember-cli-babel@npm:^7.11.1, ember-cli-babel@npm:^7.13.0, ember-cli-babel@npm:^7.17.2, ember-cli-babel@npm:^7.18.0":
-  version: 7.19.0
-  resolution: "ember-cli-babel@npm:7.19.0"
-  dependencies:
-    "@babel/core": ^7.9.0
-    "@babel/helper-compilation-targets": ^7.8.7
-    "@babel/plugin-proposal-class-properties": ^7.8.3
-    "@babel/plugin-proposal-decorators": ^7.8.3
-    "@babel/plugin-transform-modules-amd": ^7.9.0
-    "@babel/plugin-transform-runtime": ^7.9.0
-    "@babel/plugin-transform-typescript": ^7.9.0
-    "@babel/polyfill": ^7.8.7
-    "@babel/preset-env": ^7.9.0
-    "@babel/runtime": ^7.9.0
-    amd-name-resolver: ^1.2.1
-    babel-plugin-debug-macros: ^0.3.0
-    babel-plugin-ember-data-packages-polyfill: ^0.1.2
-    babel-plugin-ember-modules-api-polyfill: ^2.12.0
-    babel-plugin-module-resolver: ^3.1.1
-    broccoli-babel-transpiler: ^7.4.0
-    broccoli-debug: ^0.6.4
-    broccoli-funnel: ^2.0.1
-    broccoli-source: ^1.1.0
-    clone: ^2.1.2
-    ember-cli-babel-plugin-helpers: ^1.1.0
-    ember-cli-version-checker: ^4.1.0
-    ensure-posix-path: ^1.0.2
-    fixturify-project: ^1.10.0
-    rimraf: ^3.0.1
-    semver: ^5.5.0
-  checksum: 1fcdc148dbf8b8cffe699a2484d51803756d957b223d3012bc4025c3114e58f575303d673d99b08abab8b3695a4697231ab8f144c0e44d0ee2a8d7ddfa626a86
   languageName: node
   linkType: hard
 
@@ -7961,6 +7961,7 @@ __metadata:
     ember-export-application-global: ^2.0.1
     ember-load-initializers: ^2.1.1
     ember-maybe-import-regenerator: ^0.1.6
+    ember-modifier: ^1.0.3
     ember-qunit: ^4.6.0
     ember-resolver: ^8.0.0
     ember-source: ~3.17.0
@@ -8003,6 +8004,30 @@ __metadata:
     ember-cli-babel: ^6.0.0-beta.4
     regenerator-runtime: ^0.9.5
   checksum: a096a376f5e9bc65e2ea58b393a55585f22e08852a02a5faefc6cb5438d37d3ff216f43680d348ca0ff47af8da6ae60c41dc5604821f65bdac8d92c255cdf4a5
+  languageName: node
+  linkType: hard
+
+"ember-modifier-manager-polyfill@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "ember-modifier-manager-polyfill@npm:1.2.0"
+  dependencies:
+    ember-cli-babel: ^7.10.0
+    ember-cli-version-checker: ^2.1.2
+    ember-compatibility-helpers: ^1.2.0
+  checksum: 05ad185afc3f1140ab74cd0eccacf0b592b382571c5105c2962d0d2089052051aa4fc1f1f1c204f698a375db73d03c71cedd0cbcc8fb9ffaa488e69069786ea9
+  languageName: node
+  linkType: hard
+
+"ember-modifier@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "ember-modifier@npm:1.0.3"
+  dependencies:
+    ember-cli-babel: ^7.11.1
+    ember-cli-is-package-missing: ^1.0.0
+    ember-cli-normalize-entity-name: ^1.0.0
+    ember-cli-string-utils: ^1.1.0
+    ember-modifier-manager-polyfill: ^1.2.0
+  checksum: 23d2105ef37f8ad8527230c8f19d519dfd649ec14a271f7abf876fe0cc8ce69550aa486e56163b4b3c5e33c9b9dcdc797bf206551cafecef1eae86f52529852b
   languageName: node
   linkType: hard
 
