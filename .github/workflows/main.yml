@@ -11,5 +11,5 @@ jobs:
     - name: yarn
       run: yarn
 
-    - name: test all packages
-      run: yarn workspaces foreach -pv run test --test-port=0
+    - name: test
+      run: yarn test
