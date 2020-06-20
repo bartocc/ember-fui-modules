@@ -7,7 +7,7 @@
     ]
   },
   "scripts": {
-    "test:all": "yarn workspaces foreach -pv run test --test-port=0|grep fail"
+    "test:all": "yarn workspaces foreach -pv run test --test-port=0"
   },
   "engines": {
     "node": "12.*"
