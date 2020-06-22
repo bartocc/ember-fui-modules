@@ -73,7 +73,7 @@ module("Integration | Modifier | fui-module", function (hooks) {
   });
 
   test("slider", async function (assert) {
-    assert.expect(0);
     await render(hbs`<div {{fui-module "slider"}} class="ui slider" ></div>`);
+    assert.dom(".ui.slider .inner").exists();
   });
 });

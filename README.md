@@ -14,6 +14,8 @@ Use Fomantic UI modules in an Ember.js app.
   - [fuiModules.only: Specify what modules your application needs](#fuimodulesonly-specify-what-modules-your-application-needs)
   - [fuiModules.importCss: Opt-out of automatic CSS import](#fuimodulesimportcss-opt-out-of-automatic-css-import)
 - [Usage](#usage)
+  - [The generic `fui-module` modifier](#the-generic-fui-module-modifier)
+  - [A specific fui-<module-name> modifier for each FUI module present at the time of this writting](#a-specific-fui-module-name-modifier-for-each-fui-module-present-at-the-time-of-this-writting)
   - [Example usage for the Dropdown module](#example-usage-for-the-dropdown-module)
   - [Example usage for the Modal module](#example-usage-for-the-modal-module)
   - [Example usage for the Popup module](#example-usage-for-the-popup-module)
@@ -76,11 +78,19 @@ Additionnaly, if you use [fomantic-ui-less](https://www.npmjs.com/package/fomant
 
 ## Usage
 
-The one and only thing added by this addon to your app's namespace is the
-`fui-module` modifier. This modifier takes only one positional param to specify
-what module you want to use and as many named params as the FUI module has settings.
+This addon provides 2 types of modifiers:
+
+### The generic `fui-module` modifier
+
+This modifier takes only one positional param to specify what module you want to use and as many named params as the FUI module has settings.
 
 If you want to know what settings are available for a given module, visit the module's settings page at https://fomantic-ui.com/modules/moduleName.html#/settings), or in a console in the brower, you can type `$.fn.moduleName.settings`.
+
+### A specific fui-<module-name> modifier for each FUI module present at the time of this writting
+
+For example, the `slider` module can be initilized with the `fui-slider` modifier.
+
+If FUI happens to release a new module that has no `fui-*` counterpart in this addon, you can still easily use this module in your Ember.js app with the generic `fui-module` modifier.
 
 ### Example usage for the Dropdown module
 
@@ -157,7 +167,7 @@ TIP: Beware, the `ui popup` CSS classes must be placed on the element representi
 ### Example usage for the Slider module
 
 ```hbs
-<div {{fui-module "slider" onMove=(fn (mut this.sliderValue))}} class="ui slider" ></div>
+<div {{fui-slider onMove=(fn (mut this.sliderValue))}} class="ui slider" ></div>
 <input type="number" value={{this.sliderValue}}>
 ```
 
