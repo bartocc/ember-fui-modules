@@ -5,7 +5,27 @@ const EmberAddon = require("ember-cli/lib/broccoli/ember-addon");
 module.exports = function (defaults) {
   let app = new EmberAddon(defaults, {
     fuiModules: {
-      only: ["modal", "popup", "slider", "dropdown"],
+      only: [
+        "accordion",
+        "calendar",
+        "checkbox",
+        "dimmer",
+        "dropdown",
+        "embed",
+        "modal",
+        "nag",
+        "popup",
+        "progress",
+        "rating",
+        "search",
+        "shape",
+        "sidebar",
+        "slider",
+        "sticky",
+        "tab",
+        "toast",
+        "transition",
+      ],
     },
   });
 
