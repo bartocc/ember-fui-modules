@@ -34,7 +34,21 @@ module.exports = function (defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
+  // FUI globals
+  app.import("node_modules/fomantic-ui-css/components/reset.css");
+  app.import("node_modules/fomantic-ui-css/components/site.css");
+
+  // FUI elements
   app.import("node_modules/fomantic-ui-css/components/button.css");
+  app.import("node_modules/fomantic-ui-css/components/icon.css");
+  app.import("node_modules/fomantic-ui-css/components/image.css");
+
+  // FUI default theme
+  const destDir = "themes/default/assets/fonts";
+  app.import(
+    "node_modules/fomantic-ui-css/themes/default/assets/fonts/icons.woff2",
+    { destDir }
+  );
 
   return app.toTree();
 };
