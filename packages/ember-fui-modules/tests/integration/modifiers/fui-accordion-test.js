@@ -34,6 +34,6 @@ module("Integration | Modifier | fui-accordion", function (hooks) {
     </div>
   </div>`);
 
-    assert.equal($(".ui.accordion .content:visible").length, 1);
+    assert.ok($(".ui.accordion").data("module-accordion"));
   });
 });
