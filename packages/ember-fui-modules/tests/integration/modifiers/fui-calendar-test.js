@@ -1,3 +1,5 @@
+/* eslint-disable ember/no-jquery */
+import $ from "jquery";
 import { module, test } from "qunit";
 import { setupRenderingTest } from "ember-qunit";
 import { render } from "@ember/test-helpers";
@@ -14,6 +16,6 @@ module("Integration | Modifier | fui-calendar", function (hooks) {
     </div>
   </div>`);
 
-    assert.dom(".ui.popup.calendar").exists();
+    assert.ok($(".ui.calendar").data("module-calendar"));
   });
 });
