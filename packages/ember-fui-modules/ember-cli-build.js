@@ -9,7 +9,6 @@ module.exports = function (defaults) {
         "accordion",
         "calendar",
         "checkbox",
-        "dimmer",
         "dropdown",
         "embed",
         "modal",
