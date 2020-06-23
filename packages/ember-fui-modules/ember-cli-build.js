@@ -10,7 +10,6 @@ module.exports = function (defaults) {
         "calendar",
         "checkbox",
         "dropdown",
-        "embed",
         "modal",
         "nag",
         "popup",
