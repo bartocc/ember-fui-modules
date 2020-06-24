@@ -40,6 +40,7 @@ module.exports = function (defaults) {
 
   // FUI elements
   app.import("node_modules/fomantic-ui-css/components/button.css");
+  app.import("node_modules/fomantic-ui-css/components/card.css");
   app.import("node_modules/fomantic-ui-css/components/icon.css");
   app.import("node_modules/fomantic-ui-css/components/image.css");
 
