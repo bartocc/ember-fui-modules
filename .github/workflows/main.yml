@@ -8,20 +8,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: yarn --version
-      run: yarn --version
-
-    - name: list yarn plugins
-      run: yarn plugin list
-
-    - name: list yarn cache
-      run: ls -l .yarn/cache
-
     - name: yarn
       run: yarn
-
-    - name: list node_modules
-      run: ls -l node_modules
 
     - name: test
       run: yarn test
