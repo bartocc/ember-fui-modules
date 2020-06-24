@@ -23,8 +23,5 @@ jobs:
     - name: list node_modules
       run: ls -l node_modules
 
-    - name: ls node_modules/@babel/compat-data/corejs3-shipped-proposals
-      run: ls node_modules/@babel/compat-data/corejs3-shipped-proposals
-
     - name: test
       run: yarn test

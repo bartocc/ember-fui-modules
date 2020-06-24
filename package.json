@@ -12,5 +12,8 @@
   },
   "engines": {
     "node": "12.*"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.10.2"
   }
 }
