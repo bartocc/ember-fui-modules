@@ -18,8 +18,6 @@ module.exports = function (defaults) {
         "search",
         "shape",
         "slider",
-        "toast",
-        "transition",
       ],
     },
   });
