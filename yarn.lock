@@ -7444,12 +7444,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-auto-import@npm:^1.5.3":
-  version: 1.5.3
-  resolution: "ember-auto-import@npm:1.5.3"
+"ember-auto-import@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "ember-auto-import@npm:1.6.0"
   dependencies:
     "@babel/core": ^7.1.6
-    "@babel/preset-env": ^7.0.0
+    "@babel/preset-env": ^7.10.2
     "@babel/traverse": ^7.1.6
     "@babel/types": ^7.1.6
     "@embroider/core": ^0.4.3
@@ -7476,7 +7476,7 @@ __metadata:
     typescript-memoize: ^1.0.0-alpha.3
     walk-sync: ^0.3.3
     webpack: ~4.28
-  checksum: 00060dc5d66fe6be7c94fb6110b4096d19e9e1c39a4659fbabcde020139767597cba9bec0c0dfb67b4e146546b97874478e8c33d7285855fcc8bb30875f73040
+  checksum: b6b42edab6e455b8247da9cafd2b683fba6251d382bbc6dc0b82a5a562c96f719c9cf4705c951be5e105eb072f9a618f9fe5498b9c221100a15400785fa012b3
   languageName: node
   linkType: hard
 
@@ -8133,7 +8133,7 @@ __metadata:
     broccoli-asset-rev: ^3.0.0
     copyfiles: ^2.3.0
     debug: ^4.1.1
-    ember-auto-import: ^1.5.3
+    ember-auto-import: ^1.6.0
     ember-cli: ~3.16.0
     ember-cli-babel: ^7.18.0
     ember-cli-dependency-checker: ^3.2.0
@@ -18113,7 +18113,7 @@ resolve@1.9.0:
     "@glimmer/tracking": ^1.0.0
     babel-eslint: ^10.0.3
     broccoli-asset-rev: ^3.0.0
-    ember-auto-import: ^1.5.3
+    ember-auto-import: ^1.6.0
     ember-cli: ~3.16.0
     ember-cli-app-version: ^3.2.0
     ember-cli-babel: ^7.17.2
@@ -18152,7 +18152,7 @@ resolve@1.9.0:
     "@glimmer/tracking": ^1.0.0
     babel-eslint: ^10.0.3
     broccoli-asset-rev: ^3.0.0
-    ember-auto-import: ^1.5.3
+    ember-auto-import: ^1.6.0
     ember-cli: ~3.16.0
     ember-cli-app-version: ^3.2.0
     ember-cli-babel: ^7.17.2
