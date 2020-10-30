@@ -57,7 +57,7 @@
     "ember-source": "~3.17.0",
     "ember-source-channel-url": "^2.0.1",
     "ember-try": "^1.4.0",
-    "eslint-plugin-ember": "^8.4.0",
+    "eslint-plugin-ember": "^9.4.0",
     "eslint-plugin-node": "^11.1.0",
     "fomantic-ui-css": "^2.8.7",
     "loader.js": "^4.7.0",
