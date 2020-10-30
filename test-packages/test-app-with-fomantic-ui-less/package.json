@@ -45,7 +45,7 @@
     "ember-qunit": "^4.6.0",
     "ember-resolver": "^7.0.0",
     "ember-source": "~3.16.0",
-    "eslint-plugin-ember": "^8.5.0",
+    "eslint-plugin-ember": "^9.4.0",
     "eslint-plugin-node": "^11.0.0",
     "fomantic-ui-less": "^2.8.5",
     "loader.js": "^4.7.0",
