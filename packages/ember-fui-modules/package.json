@@ -59,7 +59,7 @@
     "ember-try": "^1.4.0",
     "eslint-plugin-ember": "^8.4.0",
     "eslint-plugin-node": "^11.1.0",
-    "fomantic-ui-css": "^2.8.5",
+    "fomantic-ui-css": "^2.8.7",
     "loader.js": "^4.7.0",
     "qunit-dom": "^1.1.0",
     "release-it": "^13.6.2"
