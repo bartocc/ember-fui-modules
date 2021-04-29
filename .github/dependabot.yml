@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: ember-cli
+    versions:
+    - ">= 0"
+  - dependency-name: ember-data
+    versions:
+    - ">= 0"
+  - dependency-name: ember-source
+    versions:
+    - ">= 0"
+  - dependency-name: release-it
+    versions:
+    - 14.3.0
+    - 14.4.0
+    - 14.4.1
+    - 14.5.0
+    - 14.5.1
+    - 14.6.0
+  - dependency-name: ember-auto-import
+    versions:
+    - 1.11.0
+    - 1.11.1
+    - 1.11.2
+  - dependency-name: ember-qunit
+    versions:
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
