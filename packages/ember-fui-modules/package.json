@@ -27,7 +27,7 @@
     "version": "auto-changelog -p && mv CHANGELOG.md ../.. && git add ../../CHANGELOG.md"
   },
   "dependencies": {
-    "@ember/jquery": "^1.1.0",
+    "@ember/jquery": "^2.0.0",
     "debug": "^4.1.1",
     "ember-cli-babel": "^7.18.0",
     "ember-cli-htmlbars": "^5.0.0",
